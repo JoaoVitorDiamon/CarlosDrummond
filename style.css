@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+::selection{
+    background-color: #222327;
+    color: aliceblue;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header.rolagem{
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    z-index: 5;
+    background-color: #222327;
+    padding: 15px 60px;
+
+}
+
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    z-index: 2;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    transition: 0.5s;
+}
+
+#indicador {
+    position: absolute;
+    width: 150px;
+    height: 75px;
+    background: #29fd53;
+    z-index: 1;
+    transition: 0.5s;
+    display: none;
+}
+
+#indicador::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    width: 50px;
+    height: 15px;
+    background: #29fd53;
+    border-radius: 15px;
+    box-shadow: 15px 30px #29fd53,
+     5px 60px #29fd53,
+     -15px 15px #222327,
+     -10px 45px #222327;
+     transition: 0.5s;
+}
+
+
+#indicador::after{
+    content: '';
+    position: absolute;
+    right: -30px;
+    width: 50px;
+    height: 15px;
+    background-color: #29fd53;
+    border-radius: 15px;
+    box-shadow: 5px 30px #29fd53,
+     -15px 60px #29fd53,
+      15px 15px #222327
+      10px 40px #222327; 
+      transition: 0.5s;
+}
+
+#indicador.habilitado::before{
+
+left: -10px;
+box-shadow: -15px 30px #29fd53,
+    -5px 60px #29fd53,
+    -10px 15px #222327
+   -20px -45px #222327;
+}
+
+#indicador.habilitado::before{
+    right: -20px;
+    box-shadow: 10px 30px #29fd53,
+    20px 60px #29fd53
+    15px 15px #222327
+    25px 45px #222327;
+}
+
+.imagem img{
+    width: 100%;
+    z-index: 811;
+}
+
+.apresentacao h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #222327;
+}
+
+.apresentacao p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 30px;
+}
+
+.apresentacao iframe{
+    display: flex;
+    margin: auto;
+    border-radius: 25px;
+}
+
+hr {
+    margin-top: 20px;
+    background-color: #222327;
+}
+
+.titulo{
+    margin-top: 20px;
+    color: #222327;
+    letter-spacing: 2.5px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.biografia {
+    display: flex;
+    
+}
+
+.biografia p{
+    width: 40%;
+    text-align: justify;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    margin-left: 25px;
+}
+
+.biografia img {
+    position: relative;
+    left: 500px;
+    bottom: 25px;
+    border-radius: 15px;
+}
+
+.carreira {
+    display: flex;
+}
+
+.carreira p {
+    width: 40%;
+    text-align: justify;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    margin-left: 25px;
+}
+
+.carreira img {
+    width: 30%;
+    position: relative;
+    left: 250px;
+    bottom: 25px;
+    border-radius: 25px;
+}
+
+.obras {
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.Alguma-Poesia{
+    text-align: center;
+    /* width: 30%; */
+
+}
+.Alguma-Poesia img {
+    width: 320px;
+    height: 440px;
+}
+.Alguma-Poesia h3{
+color: #222327;
+}
+
+
+.SentimentodoMundo{
+    text-align: center;
+    color: #222327;
+}
+
+.SentimentodoMundo img{
+    width: 320px;
+    height: 440px;
+}
+
+.rosaDoPovo {
+    text-align: center;
+    color: #222327;
+}
+
+.claroEnigma {
+    margin-top: 20px;
+    text-align: center;
+    color: #222327;
+}
+
+.AntologiaPoetica{
+    margin-top: 20px;
+    text-align: center;
+    color: #222327;
+}
+
+.AvessoDasCoisas{
+    margin-top: 20px;
+    text-align: center;
+    color: #222327;
+}
+
+
+.frases {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.caixa1{
+    color: #222327;
+    border: 1px solid #222327;
+    width: 60%;
+    -webkit-border-radius: 70px;
+    -webkit-border-top-left-radius: 2px;
+    -moz-border-radius: 70px;
+    -moz-border-radius-topleft: 2px;
+    border-radius: 70px;
+    border-top-left-radius: 2px;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-left: 15px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    color: #222327;
+    letter-spacing: 2.5px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.caixa1:hover{
+    border: 1px solid white;
+    background-color: #222327;
+    color: azure;
+    transition: 0.5s;
+    cursor: pointer;
+}
