@@ -11,7 +11,8 @@
 html {
     scroll-behavior: smooth;
 }
-::selection{
+
+::selection {
     background-color: #222327;
     color: aliceblue;
 }
@@ -23,10 +24,10 @@ header {
     width: 100%;
 }
 
-header.rolagem{
+/* header.rolagem{
     position: fixed;
     z-index: 100;
-}
+} */
 
 nav {
     position: relative;
@@ -44,7 +45,7 @@ nav a {
     position: relative;
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     z-index: 2;
     height: 70px;
     display: flex;
@@ -73,14 +74,14 @@ nav a {
     background: #29fd53;
     border-radius: 15px;
     box-shadow: 15px 30px #29fd53,
-     5px 60px #29fd53,
-     -15px 15px #222327,
-     -10px 45px #222327;
-     transition: 0.5s;
+        5px 60px #29fd53,
+        -15px 15px #222327,
+        -10px 45px #222327;
+    transition: 0.5s;
 }
 
 
-#indicador::after{
+#indicador::after {
     content: '';
     position: absolute;
     right: -30px;
@@ -89,35 +90,31 @@ nav a {
     background-color: #29fd53;
     border-radius: 15px;
     box-shadow: 5px 30px #29fd53,
-     -15px 60px #29fd53,
-      15px 15px #222327
-      10px 40px #222327; 
-      transition: 0.5s;
+        -15px 60px #29fd53,
+        15px 15px #222327 10px 40px #222327;
+    transition: 0.5s;
 }
 
-#indicador.habilitado::before{
+#indicador.habilitado::before {
 
-left: -10px;
-box-shadow: -15px 30px #29fd53,
-    -5px 60px #29fd53,
-    -10px 15px #222327
-   -20px -45px #222327;
+    left: -10px;
+    box-shadow: -15px 30px #29fd53,
+        -5px 60px #29fd53,
+        -10px 15px #222327 -20px -45px #222327;
 }
 
-#indicador.habilitado::before{
+#indicador.habilitado::before {
     right: -20px;
     box-shadow: 10px 30px #29fd53,
-    20px 60px #29fd53
-    15px 15px #222327
-    25px 45px #222327;
+        20px 60px #29fd53 15px 15px #222327 25px 45px #222327;
 }
 
-.imagem img{
+.imagem img {
     width: 100%;
     z-index: 811;
 }
 
-.apresentacao h2{
+.apresentacao h2 {
     font-size: 2rem;
     text-align: center;
     color: #222327;
@@ -129,7 +126,7 @@ box-shadow: -15px 30px #29fd53,
     line-height: 30px;
 }
 
-.apresentacao iframe{
+.apresentacao iframe {
     display: flex;
     margin: auto;
     border-radius: 25px;
@@ -140,7 +137,7 @@ hr {
     background-color: #222327;
 }
 
-.titulo{
+.titulo {
     margin-top: 20px;
     color: #222327;
     letter-spacing: 2.5px;
@@ -150,10 +147,10 @@ hr {
 
 .biografia {
     display: flex;
-    
+
 }
 
-.biografia p{
+.biografia p {
     width: 40%;
     text-align: justify;
     letter-spacing: 1.2px;
@@ -196,33 +193,51 @@ hr {
 }
 
 
-.Alguma-Poesia{
+.Alguma-Poesia {
     text-align: center;
     /* width: 30%; */
 
 }
+
 .Alguma-Poesia img {
     width: 320px;
     height: 440px;
+    transition: 0.5s;
 }
-.Alguma-Poesia h3{
-color: #222327;
+
+.Alguma-Poesia:hover {
+    scale: 1.05;
+    opacity: 1;
+}
+
+.Alguma-Poesia h3 {
+    color: #222327;
 }
 
 
-.SentimentodoMundo{
+.SentimentodoMundo {
     text-align: center;
     color: #222327;
 }
 
-.SentimentodoMundo img{
+.SentimentodoMundo img {
     width: 320px;
     height: 440px;
+}
+
+.SentimentodoMundo:hover {
+    scale: 1.05;
+    opacity: 1;
 }
 
 .rosaDoPovo {
     text-align: center;
     color: #222327;
+}
+
+.rosaDoPovo:hover {
+    scale: 1.05;
+    opacity: 1;
 }
 
 .claroEnigma {
@@ -231,16 +246,31 @@ color: #222327;
     color: #222327;
 }
 
-.AntologiaPoetica{
+.claroEnigma:hover {
+    scale: 1.05;
+    opacity: 1;
+}
+
+.AntologiaPoetica {
     margin-top: 20px;
     text-align: center;
     color: #222327;
 }
 
-.AvessoDasCoisas{
+.AntologiaPoetica:hover {
+    scale: 1.05;
+    opacity: 1;
+}
+
+.AvessoDasCoisas {
     margin-top: 20px;
     text-align: center;
     color: #222327;
+}
+
+.AvessoDasCoisas:hover {
+    scale: 1.05;
+    opacity: 1;
 }
 
 
@@ -250,7 +280,8 @@ color: #222327;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
-.caixa1{
+
+.caixa1 {
     color: #222327;
     border: 1px solid #222327;
     width: 60%;
@@ -267,7 +298,7 @@ color: #222327;
     margin-bottom: 50px;
 }
 
-h2{
+h2 {
     text-align: center;
     margin-top: 20px;
     color: #222327;
@@ -276,7 +307,7 @@ h2{
     font-size: 3rem;
 }
 
-.caixa1:hover{
+.caixa1:hover {
     border: 1px solid white;
     background-color: #222327;
     color: azure;
